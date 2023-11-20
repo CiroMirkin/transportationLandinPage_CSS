@@ -52,13 +52,13 @@ strong {
 }
 
 .page-header {
-    position: sticky;
     box-sizing: border-box;
     width: auto;
     padding: 2rem 3rem;
     
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #fff;
 }
 .page-header h3 {
