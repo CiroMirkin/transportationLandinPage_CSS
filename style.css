@@ -1,0 +1,228 @@
+* {padding: 0;margin: 0;}
+
+:root {
+    --primary-color:#E54936;
+    --section-primary-color:#E6E5E1;
+    --section-secondary-color: #FFFFFF;
+    --text-color: #000;
+}
+
+html {
+    scroll-behavior: smooth; 
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    background-image: url(./pictures/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.icon {
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+.icon--phone {
+    width: 30px;
+    height: 30px;
+    background-image: url(./pictures/phone.svg);
+}
+.icon--check {
+    width: 60px;
+    height: 60px;
+    background-image: url(./pictures/check-square.svg);
+}
+
+.container{
+    width: 100%;    
+    background: rgba(0, 0, 0, 0.47);
+}
+
+.page-header {
+    position: sticky;
+    box-sizing: border-box;
+    width: auto;
+    padding: 2rem 3rem;
+    
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.page-header h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.1rem;
+    align-items: left;
+}
+.page-header__telephone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 2.1rem;
+    color: var(--text-color);
+}
+
+.page-first-content {
+    max-width: 960px;
+    min-height: 40rem;
+    padding: 2rem 1.6rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+}
+@media only screen and (min-width: 700px) {
+    .page-first-content {
+        flex-direction: row;
+    }
+}
+.page-first-content__text {
+    display: inline-block;
+    width: auto;
+    padding: 1rem;
+    color: #fff;
+    backdrop-filter: blur(2px);
+}
+.page-first-content__text h1 {
+    margin-block-end: 1rem;
+    font-size: 4.3rem;
+    line-height: 4.7rem;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 800;
+}
+.page-first-content__text h1 span {
+    font-size: 5rem;
+    line-height: 5.4rem;
+}
+.page-first-content__text h2 {
+    font-size: 2rem;
+    line-height: 2.1rem;
+    text-align: left;
+    font-weight: bold;
+}
+.page-first-conten__form {
+    display: inline-block;
+    width: 260px;
+    padding: 1rem;
+    margin: 3rem 0 0 2rem;
+    background-color: var(--primary-color);
+}
+.page-first-conten__form-title {
+    margin: 1rem 1rem .6rem;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+}
+.page-first-conten__form-desc {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+}
+.form-contact {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.form-contact input, textarea {
+    border: #ccc solid 1px;
+    height: 3rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding-inline: .4rem;
+    color: var(--text-color);
+}
+.form-contact textarea {
+    font-family: 'DM Sans', sans-serif;
+    padding-block: .4rem;
+}
+.form-contact input::placeholder {
+    color: var(--text-color);
+}
+.form-contact button[type="submit"] {
+    height: 48px;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    background-color: #1F1F1F;
+}
+
+.quality {
+    padding: 6rem 0;
+    background: var(--section-primary-color);
+}
+.quality__icon {
+    display: block;
+    width: auto;
+}
+.quality ul {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.quality ul li {
+    min-width: 10rem;
+    max-width: 18rem;
+    margin: 1.6rem;
+    display: flex;
+    gap: 0.6rem;
+    flex-direction: column;
+    align-items: center;
+}
+.quality h3 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+.quality p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.easyway {
+    padding: 6rem 2rem;
+    background-color: var(--section-secondary-color);
+    color: var(--text-color);
+    text-align: center;
+}
+.easyway h2 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    padding-block: 2rem 1.6rem;
+}
+.easyway p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
