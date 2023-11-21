@@ -217,6 +217,8 @@ strong {
 }
 
 .easyway {
+    display: grid;
+    place-content: center;
     padding: 6rem 2rem;
     background-color: var(--section-secondary-color);
     color: var(--text-color);
@@ -230,4 +232,21 @@ strong {
 .easyway p {
     font-size: 1.8rem;
     line-height: 2rem;
+}
+.easyway-points {
+    min-width: 400px;
+    max-width: 80rem;
+    min-height: 300px;
+    max-height: 40rem;
+    margin: 4rem 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: stretch;
+    gap: 6px;
+    list-style: none;
+}
+.easyway-points__point {
+    min-width: 10rem;
+    min-height: 6rem;
+    background-color: var(--section-primary-color);
 }
