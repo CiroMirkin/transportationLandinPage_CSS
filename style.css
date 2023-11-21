@@ -94,17 +94,12 @@ strong {
 .page-first-content {
     width: 100%;
     padding: 2rem 6rem 4rem;
-    min-height: 60rem;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 1.2rem;
-}
-@media only screen and (min-width: 700px) {
-    .page-first-content {
-        flex-direction: row;
-    }
 }
 .page-first-content__text {
     display: inline-block;
@@ -223,6 +218,7 @@ strong {
 }
 
 .easyway {
+    height: auto;
     display: grid;
     place-content: center;
     padding: 6rem 2rem;
@@ -242,8 +238,7 @@ strong {
 .easyway-points {
     min-width: 400px;
     max-width: 80rem;
-    min-height: 300px;
-    max-height: 40rem;
+    height: auto;
     margin: 4rem 0 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -252,9 +247,24 @@ strong {
     list-style: none;
 }
 .easyway-points__point {
-    min-width: 10rem;
-    min-height: 6rem;
+    width: auto;
+    height: auto;
+    display: grid;
+    place-items: center;
     background-color: var(--section-primary-color);
+}
+.easyway-points__point p {
+    margin: 1rem;
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-color);
+}
+.easyway-points__point img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
 }
 
 .about-us {
@@ -287,4 +297,15 @@ strong {
     margin-block-start: 2.6rem;
     padding: 1.6rem;
     background-color: var(--primary-color);
+}
+
+
+
+@media only screen and (min-width: 700px) {
+    .page-first-content {
+        flex-direction: row;
+    }
+    .easyway-points {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
