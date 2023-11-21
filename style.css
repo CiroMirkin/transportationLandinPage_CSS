@@ -250,3 +250,35 @@ strong {
     min-height: 6rem;
     background-color: var(--section-primary-color);
 }
+
+.about-us {
+    width: 100%;
+    padding: 6rem 2rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-color: var(--section-primary-color);
+    color: var(--text-color);
+}
+.about-us h2 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    margin-block: 1.4rem;
+}
+.about-us p {
+    min-width: 400px;
+    max-width: 60rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-block-end: 1.4rem;
+}
+.about-us h3 {
+    width: 32rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    margin-block-start: 2.6rem;
+    padding: 1.6rem;
+    background-color: var(--primary-color);
+}
